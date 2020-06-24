@@ -1,0 +1,10 @@
+{
+  "nominationApp": {
+    "CustomsStatus": {
+      "null": "",
+      "EAD": "EAD",
+      "T1": "T1",
+      "T2": "T2"
+    }
+  }
+}

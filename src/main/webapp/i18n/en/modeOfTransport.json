@@ -1,0 +1,10 @@
+{
+  "nominationApp": {
+    "ModeOfTransport": {
+      "null": "",
+      "TRANSPORT1": "TRANSPORT1",
+      "TRANSPORT2": "TRANSPORT2",
+      "TRANSPORT3": "TRANSPORT3"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+entity LegNomination { 
+    customerId String 
+    agent String
+    last3Cargoes String
+    productId String
+    ownVatNo String
+    vettingReference String
+    warehouseAddress String
+    warehouseNo String
+    warehouseTaxNo String
+    productReceiverVat String
+    customsStatus CustomsStatus 
+    documentType String
+    clientClauseDetails String
+    status NominationStatus
+    counterPartyStatus NominationStatus
+    comment String
+    nominationTimestamp Instant
+    cnCode String
+    financialHold String
+    consignor String
+    blendingInstructions String
+    productAdditives String
+    homogenisation String
+    productReceiverId String
+    modeOfTransport ModeOfTransport
+    modeOfTransportEquipment String
+    dischargeDate LocalDate
+    loadportDate LocalDate
+    loadLocation String
+    dischargeLocation String
+    pleaseAdviseWarehouseTaxNo Boolean
+    pleaseAdviseWarehouseNo Boolean
+    pleaseAdviseWarehouseAddress Boolean
+    pleaseAdviseProductReceiverVAT Boolean
+    pleaseAdviseProductReceiver Boolean
+    pleaseAdviseLoadport Boolean
+    pleaseAdviseDisport Boolean
+    preferentialOrigin String
+    productGrade String
+    productSpecification String
+    productAdditionalComments String
+    adn String
+    cdni String
+    customAdn String
+    customCdni String
+    movementTransferType MovementTransferType
+    customLoadLocation String
+    customDischargeLocation String
+    customReceiverName String
+    customReceiverAddress String
+    customConsignor String
+    notes String
+    terminalCompanyLegalEntity String
+    customTerminalCompanyLegalEntity String
+    iceDelivery Boolean
+}
+
+entity Parcel {
+	fakeProp String
+}
+
+entity PlaceholderParcel {
+	fakeProp String
+}
+
+entity BuildDraw {
+	fakeProp String
+} 
+
+entity NominationMetadata {
+	fakeProp String
+}
+
+enum MovementTransferType {
+    TYPE1,
+    TYPE2,
+    TYPE3
+}
+
+enum ModeOfTransport {
+    TRANSPORT1,
+    TRANSPORT2,
+    TRANSPORT3
+}
+
+enum NominationStatus {
+    PENDING, CANCELLED, NOMINATED, REVISED, REJECTED, REVISION 
+}
+
+enum CustomsStatus {
+    EAD, T1, T2
+}
+
+relationship OneToOne {
+	LegNomination{nominationMetadata} to NominationMetadata
+}   
+ 
+relationship OneToMany { 
+	LegNomination{parcels} to Parcel,
+    LegNomination{buildDraws} to BuildDraw
+    LegNomination{placeholderParcels} to PlaceholderParcel
+} 
+ 
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job

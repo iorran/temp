@@ -1,0 +1,23 @@
+{
+  "nominationApp": {
+    "placeholderParcel": {
+      "home": {
+        "title": "Placeholder Parcels",
+        "createLabel": "Create a new Placeholder Parcel",
+        "createOrEditLabel": "Create or edit a Placeholder Parcel",
+        "notFound": "No Placeholder Parcels found"
+      },
+      "created": "A new Placeholder Parcel is created with identifier {{ param }}",
+      "updated": "A Placeholder Parcel is updated with identifier {{ param }}",
+      "deleted": "A Placeholder Parcel is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Placeholder Parcel {{ id }}?"
+      },
+      "detail": {
+        "title": "Placeholder Parcel"
+      },
+      "fakeProp": "Fake Prop",
+      "legNomination": "Leg Nomination"
+    }
+  }
+}

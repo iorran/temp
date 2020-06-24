@@ -1,0 +1,22 @@
+{
+  "nominationApp": {
+    "nominationMetadata": {
+      "home": {
+        "title": "Nomination Metadata",
+        "createLabel": "Criar novo(a) Nomination Metadata",
+        "createOrEditLabel": "Criar ou editar Nomination Metadata",
+        "notFound": "Nenhum Nomination Metadata encontrado"
+      },
+      "created": "Um novo Nomination Metadata foi criado com o identificador {{ param }}",
+      "updated": "Nomination Metadata com identificador {{ param }} foi actualizado",
+      "deleted": "Nomination Metadata com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Nomination Metadata {{ id }}?"
+      },
+      "detail": {
+        "title": "Nomination Metadata"
+      },
+      "fakeProp": "Fake Prop"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nominationApp": {
+    "buildDraw": {
+      "home": {
+        "title": "Build Draws",
+        "createLabel": "Criar novo(a) Build Draw",
+        "createOrEditLabel": "Criar ou editar Build Draw",
+        "notFound": "Nenhum Build Draws encontrado"
+      },
+      "created": "Um novo Build Draw foi criado com o identificador {{ param }}",
+      "updated": "Build Draw com identificador {{ param }} foi actualizado",
+      "deleted": "Build Draw com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Build Draw {{ id }}?"
+      },
+      "detail": {
+        "title": "Build Draw"
+      },
+      "fakeProp": "Fake Prop",
+      "legNomination": "Leg Nomination"
+    }
+  }
+}
