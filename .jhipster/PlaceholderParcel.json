@@ -1,0 +1,29 @@
+{
+  "name": "PlaceholderParcel",
+  "fields": [
+    {
+      "fieldName": "fakeProp",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "legNomination",
+      "otherEntityRelationshipName": "placeholderParcels",
+      "relationshipName": "legNomination",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200624032629",
+  "entityTableName": "placeholder_parcel",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

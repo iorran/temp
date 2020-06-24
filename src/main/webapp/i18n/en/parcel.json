@@ -1,0 +1,23 @@
+{
+  "nominationApp": {
+    "parcel": {
+      "home": {
+        "title": "Parcels",
+        "createLabel": "Create a new Parcel",
+        "createOrEditLabel": "Create or edit a Parcel",
+        "notFound": "No Parcels found"
+      },
+      "created": "A new Parcel is created with identifier {{ param }}",
+      "updated": "A Parcel is updated with identifier {{ param }}",
+      "deleted": "A Parcel is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Parcel {{ id }}?"
+      },
+      "detail": {
+        "title": "Parcel"
+      },
+      "fakeProp": "Fake Prop",
+      "legNomination": "Leg Nomination"
+    }
+  }
+}

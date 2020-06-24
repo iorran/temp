@@ -1,0 +1,13 @@
+export const enum NominationStatus {
+  PENDING = 'PENDING',
+
+  CANCELLED = 'CANCELLED',
+
+  NOMINATED = 'NOMINATED',
+
+  REVISED = 'REVISED',
+
+  REJECTED = 'REJECTED',
+
+  REVISION = 'REVISION',
+}

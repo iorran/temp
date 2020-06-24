@@ -1,0 +1,269 @@
+{
+  "name": "LegNomination",
+  "fields": [
+    {
+      "fieldName": "customerId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "agent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "last3Cargoes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ownVatNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vettingReference",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "warehouseAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "warehouseNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "warehouseTaxNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productReceiverVat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customsStatus",
+      "fieldType": "CustomsStatus",
+      "fieldValues": "EAD,T1,T2"
+    },
+    {
+      "fieldName": "documentType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clientClauseDetails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "NominationStatus",
+      "fieldValues": "PENDING,CANCELLED,NOMINATED,REVISED,REJECTED,REVISION"
+    },
+    {
+      "fieldName": "counterPartyStatus",
+      "fieldType": "NominationStatus",
+      "fieldValues": "PENDING,CANCELLED,NOMINATED,REVISED,REJECTED,REVISION"
+    },
+    {
+      "fieldName": "comment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nominationTimestamp",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "cnCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "financialHold",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "consignor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "blendingInstructions",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productAdditives",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "homogenisation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productReceiverId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modeOfTransport",
+      "fieldType": "ModeOfTransport",
+      "fieldValues": "TRANSPORT1,TRANSPORT2,TRANSPORT3"
+    },
+    {
+      "fieldName": "modeOfTransportEquipment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dischargeDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "loadportDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "loadLocation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dischargeLocation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pleaseAdviseWarehouseTaxNo",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "pleaseAdviseWarehouseNo",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "pleaseAdviseWarehouseAddress",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "pleaseAdviseProductReceiverVAT",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "pleaseAdviseProductReceiver",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "pleaseAdviseLoadport",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "pleaseAdviseDisport",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "preferentialOrigin",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productGrade",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productSpecification",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productAdditionalComments",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cdni",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customAdn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customCdni",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "movementTransferType",
+      "fieldType": "MovementTransferType",
+      "fieldValues": "TYPE1,TYPE2,TYPE3"
+    },
+    {
+      "fieldName": "customLoadLocation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customDischargeLocation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customReceiverName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customReceiverAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customConsignor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "terminalCompanyLegalEntity",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customTerminalCompanyLegalEntity",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "iceDelivery",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "nominationMetadata",
+      "otherEntityRelationshipName": "legNomination",
+      "relationshipName": "nominationMetadata",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "parcel",
+      "otherEntityRelationshipName": "legNomination",
+      "relationshipName": "parcels"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "buildDraw",
+      "otherEntityRelationshipName": "legNomination",
+      "relationshipName": "buildDraws"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "placeholderParcel",
+      "otherEntityRelationshipName": "legNomination",
+      "relationshipName": "placeholderParcels"
+    }
+  ],
+  "changelogDate": "20200624032429",
+  "entityTableName": "leg_nomination",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

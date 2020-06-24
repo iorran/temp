@@ -1,0 +1,21 @@
+{
+  "name": "NominationMetadata",
+  "fields": [
+    {
+      "fieldName": "fakeProp",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200624032829",
+  "entityTableName": "nomination_metadata",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

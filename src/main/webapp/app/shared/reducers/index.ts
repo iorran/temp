@@ -12,6 +12,26 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import legNomination, {
+  LegNominationState
+} from 'app/entities/leg-nomination/leg-nomination.reducer';
+// prettier-ignore
+import parcel, {
+  ParcelState
+} from 'app/entities/parcel/parcel.reducer';
+// prettier-ignore
+import placeholderParcel, {
+  PlaceholderParcelState
+} from 'app/entities/placeholder-parcel/placeholder-parcel.reducer';
+// prettier-ignore
+import buildDraw, {
+  BuildDrawState
+} from 'app/entities/build-draw/build-draw.reducer';
+// prettier-ignore
+import nominationMetadata, {
+  NominationMetadataState
+} from 'app/entities/nomination-metadata/nomination-metadata.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -25,6 +45,11 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly legNomination: LegNominationState;
+  readonly parcel: ParcelState;
+  readonly placeholderParcel: PlaceholderParcelState;
+  readonly buildDraw: BuildDrawState;
+  readonly nominationMetadata: NominationMetadataState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -40,6 +65,11 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  legNomination,
+  parcel,
+  placeholderParcel,
+  buildDraw,
+  nominationMetadata,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 });

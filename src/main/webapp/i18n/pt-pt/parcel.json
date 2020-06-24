@@ -1,0 +1,23 @@
+{
+  "nominationApp": {
+    "parcel": {
+      "home": {
+        "title": "Parcels",
+        "createLabel": "Criar novo(a) Parcel",
+        "createOrEditLabel": "Criar ou editar Parcel",
+        "notFound": "Nenhum Parcels encontrado"
+      },
+      "created": "Um novo Parcel foi criado com o identificador {{ param }}",
+      "updated": "Parcel com identificador {{ param }} foi actualizado",
+      "deleted": "Parcel com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Parcel {{ id }}?"
+      },
+      "detail": {
+        "title": "Parcel"
+      },
+      "fakeProp": "Fake Prop",
+      "legNomination": "Leg Nomination"
+    }
+  }
+}
